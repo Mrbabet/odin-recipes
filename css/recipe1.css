@@ -64,17 +64,12 @@ select {
     scroll-behavior: initial;
   }
 }
-body {
-  background-color: rgb(250, 219, 181);
-}
-
 header {
   display: flex;
   justify-content: center;
 }
 header h1 {
   font-size: 60px;
-  margin-bottom: 10rem;
 }
 header h1 a {
   text-decoration: none;
@@ -82,46 +77,35 @@ header h1 a {
 }
 
 .wrapper {
+  margin: 24px 32px;
+}
+.wrapper .ingredients, .wrapper .directions {
+  margin-bottom: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
-.wrapper img {
-  position: relative;
+.wrapper .ingredients {
+  flex-direction: row;
+  display: flex;
+  gap: 5rem;
+  flex-basis: 100%;
+}
+.wrapper .ingredients .ingredients-img {
   width: 500px;
-  margin: 0;
-  padding: 0;
 }
-
-ul:hover li {
-  background-color: rgb(0, 0, 0);
+.wrapper .ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-ul:hover img:not(:hover) {
-  opacity: 0.3;
-  transition: 0.4s ease-in-out;
+.wrapper .directions ul {
+  display: flex;
+  gap: 2rem;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
   list-style: none;
-  transition: 0.4s;
-}
-ul li {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 28px;
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-}
-ul .link-text {
-  position: absolute;
-  padding-left: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=recipe1.css.map */
