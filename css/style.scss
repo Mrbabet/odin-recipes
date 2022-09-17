@@ -65,12 +65,18 @@ select {
 }
 body{
     overflow: hidden;
+    background-color: rgb(250, 219, 181);
 }
 header{
     display: flex;
     justify-content: center;
     h1{
         font-size:60px;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 .wrapper{
@@ -80,28 +86,42 @@ header{
     justify-content: center;
     align-items: center;
     img{
+        position: relative;
         width: 500px;
         margin: 0;
-        padding:0 ;
-    }
-    ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-        li{ 
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            text-align: center;
-            font-size: 28px;
-            a{
-                text-decoration: none;
-                color: black;
-                
-            }
-            
-        }
+        padding:0;
+    }   
+}
+    ul:hover{
+    li{
+        background-color: rgba(0, 0, 0);
+      }
+    img:not(:hover){
+    opacity: 0.3;
+    transition: 0.4s ease-in-out;
     }
 }
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    li{ 
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+        font-size: 28px;
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }  
+    }
+    .link-text{
+        position: absolute;
+    }
+}
+
